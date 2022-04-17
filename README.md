@@ -18,6 +18,7 @@ yarn add webpack webpack-cli babel-loader -D
 const path = require('path');
 
 module.exports = {
+    mode: 'development',
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -38,6 +39,7 @@ module.exports = {
 }
 
 /*
+mode: A forma que tem que ser compilado se é (delelopment | production)
 entry: Indica o arquivo principal da aplicação;
 output: Indica o arquivo de saida do webpack;
 resolve: Indica quais tipos de arquivos devem sem interpretados;
